@@ -7,10 +7,10 @@ class Item { // cannot alter //
 }
 
 
-// Conjured” items --- degrade in Quality twice as fast as normal items (no tick!) Need to implement !
+// Conjured” items --- degrade in Quality twice as fast as normal items (tick)
 // Once the sell by date has passed, Quality degrades twice as fast (tick)
 // The Quality of an item is never negative (tick)
-// The Quality of an item is never more than 50
+// The Quality of an item is never more than 50 (tick)
 // The Quality of an item -1 each day (tick)
 // Each day sell by date reduces by 1 (tick)
 
