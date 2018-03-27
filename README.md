@@ -32,55 +32,47 @@ about how to implement the new feature. I also annotated the code with my commen
 remember what code was doing when looking back at it.
 
 After considering where this new feature would go I decided to add tests to further my 
-understanding of what the code is doing.
+understanding of what the code is doing. This was to check that the Conjured Mana Cake (the new item
+that the company wants me to add) would decrease by -2 quality each day before sell by date. And then after
+sell by date it needed to decrease by -4. I wrote tests for both of these outcomes and then
+edited the code to what I believed would achieve this. The tests passed and the features were integrated. 
+
+I will be looking to extract the logic into clear functions and out of the 
+spaghetti if else vortex in the future. But for the time I used this exercise to
+practise my ability to read legacy code and understand what it was doing before 
+implementing and integrating new features successfully.
 
 
-## Prerequisites
+## How to use
 
-What things you need to install the software and how to install them
+Nothing to install
 
-Give examples
-
-
-## Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
-
-Give the example
-
-And repeat
-
-until finished
-
-End with an example of getting some data out of the system or using it for a little demo
+1. Clone repo
+2. Open TexttestFixture.html to see code run successfully with new addition 'Conjured Mana Cake' 
 
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+1. Open SpecRunner in browser to see tests pass
 
 
 ## Break down into end to end tests
 
-Explain what these tests test and why
+The tests test that Conjure Mana Cake was successfully integrated into the existing 
+codebase. As the code I added is separate from the existing code it does not
+interact with the other items and their features. I am aware of the interconnected nature
+of the if vortex of code and would be wary of implementing such a strategy in the future.
+This is because the code could be connected beyond ways I understand, hence ideally
+I would test all the other items to make sure they aren't impacted by my additions.
+This is something I will do when I have more time, however the legacy code is 
+quite simple and being short on time meant that I didn't focus on thoroughness. 
 
-Give an example
-
-
-## And coding style tests
-
-Explain what these tests test and why
-
-Give an example
-
-
-## Built With
-
-    Dropwizard - The web framework used
-    Maven - Dependency Management
-    ROME - Used to generate RSS Feeds
+Despite these issues, I plan on returning to this to extract the code from the spaghetti
+to make it cleaner and easier to read. The only reason I didn't do this originally is because
+its a skill I know I can already do so I'd rather move on from this kata and start the other
+two that Makers has set for me this week to complete. The two proceedings tech tests 
+are on skills I feel I need to improve upon. Hence why I'd rather spend more time on 
+them than this (at this precise moment in time)!
 
 
 ## Authors

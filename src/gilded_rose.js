@@ -57,6 +57,9 @@ class Shop {
             if (this.items[i].quality > 0) {
               if (this.items[i].name != 'Sulfuras, Hand of Ragnaros') {
                 this.items[i].quality = this.items[i].quality - 1; // If Conjured, dexterity vest, mongoose, + sell by date < 0 + quality > 0, -1 to quality
+                  if (this.items[i].name === 'Conjured Mana Cake') {
+                    this.items[i].quality = this.items[i].quality - 1;
+                }
               }
             }
           } else {
@@ -73,8 +76,3 @@ class Shop {
     return this.items;
   }
 }
-
-// Item quality -1
-// Sell by date -1
-// Item quality if < 0 sell by date -1
-//
