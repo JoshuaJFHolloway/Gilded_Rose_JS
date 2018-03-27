@@ -25,7 +25,10 @@ class Shop {
       if (this.items[i].name != 'Aged Brie' && this.items[i].name != 'Backstage passes to a TAFKAL80ETC concert') {
         if (this.items[i].quality > 0) {
           if (this.items[i].name != 'Sulfuras, Hand of Ragnaros') {
-            this.items[i].quality = this.items[i].quality - 1;    // decreases Conjured item quality by 1
+            this.items[i].quality = this.items[i].quality - 1;    // decreases Conjured, dexterity vest, mongoose item quality by 1
+            if (this.items[i].name === 'Conjured Mana Cake') {
+              this.items[i].quality = this.items[i].quality - 1;
+            }
           }
         }
       } else {      // if aged brie or backstage
@@ -46,14 +49,14 @@ class Shop {
         }
       }
       if (this.items[i].name != 'Sulfuras, Hand of Ragnaros') {
-        this.items[i].sellIn = this.items[i].sellIn - 1; // reduces the sell by date of Conjured item (and all the others bar Sulfuras) by 1
+        this.items[i].sellIn = this.items[i].sellIn - 1; // reduces the sell by date of all apart from Sulfuras by 1
       }
       if (this.items[i].sellIn < 0) {
         if (this.items[i].name != 'Aged Brie') {
           if (this.items[i].name != 'Backstage passes to a TAFKAL80ETC concert') {
             if (this.items[i].quality > 0) {
               if (this.items[i].name != 'Sulfuras, Hand of Ragnaros') {
-                this.items[i].quality = this.items[i].quality - 1; // If Conjured + sell by date < 0 + quality > 0, -1 to quality
+                this.items[i].quality = this.items[i].quality - 1; // If Conjured, dexterity vest, mongoose, + sell by date < 0 + quality > 0, -1 to quality
               }
             }
           } else {
