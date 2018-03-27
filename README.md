@@ -25,6 +25,13 @@ insta-rage and one-shot me as he doesn’t believe in shared code ownership (you
 
 ## How I approached this kata
 
+The first thing I did was familiarise myself with what the code does. I read through all the files
+and digested and understood how they communicate with each other. Afterwards I had a look
+at the test files. By understanding the functions and testing setup I gave myself a good foundation to thinking
+about how to implement the new feature. 
+
+After considering where this feature would go I decided to add tests to further my 
+understanding of what the code is doing.
 
 
 ## Prerequisites
