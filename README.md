@@ -1,4 +1,4 @@
-# Project Title
+# Gilded_Rose_Kata
 
 One Paragraph of project description goes here
 
